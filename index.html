@@ -1,75 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset='utf-8'>
-
-  <title>sibprogrammer/owp @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #f249f2;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #0db60d; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #0db60d; }
-    h3 { text-align: center; color: #0db60d; }
-    a { color: #0db60d; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="http://github.com/sibprogrammer/owp"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/sibprogrammer/owp/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/sibprogrammer/owp/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <title>ovz-web-panel - OpenVZ Web Panel</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="ROBOTS" content="NOARCHIVE" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/tripoli.simple.css" />
+    <!--[if IE]>
+      <link type="text/css" rel="stylesheet" href="stylesheets/tripoli.simple.ie.css" />
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="stylesheets/tripoli.visual.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/tripoli.type.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/prettify.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="content">
+        <h1>OpenVZ Web Panel</h1>
+        <p>
+          OpenVZ Web Panel is a GUI web-based frontend for controlling of the hardware and virtual servers with the OpenVZ virtualization technology.
+        </p>
+        <h2>Announcements</h2>
+        <ul>
+          <li>2011/04/17 - OpenVZ Web Panel 2.0 is available! It's a major release. Most important features are Remote API, IP addresses management, virtual servers migration. Also a lot of bugfixes were made. Thanks to all the people who helped in release preparation. See ChangeLog for more details.</li>
+        </ul>
+        <h2>Demo</h2>
+        <p>
+          Demonstration of web panel's user interface is below:
+        </p>
+        <p>
+          <img alt="Screenshot" title="Screenshot" src="images/promo.png" width="650" height="500" />
+        </p>
+        <h2>Installation</h2>
+        <p>
+          The most simple way to install OpenVZ Web Panel is to run the following command (under root):
+        </p>
+        <pre class="prettyprint lang-bash">wget -O - 'http://ovz-web-panel.googlecode.com/svn/installer/ai.sh' | /bin/bash</pre>
+        <p>
+          After installation Panel should be available by the following URL:
+        </p>
+        <pre>
+          http://&lt;your-host&gt;:3000
+        </pre>
+        <p>
+          Default administrator's credentials are: admin/admin. Don't forget to change default password.
+        </p>
+      </div>
     </div>
-
-    <h1><a href="http://github.com/sibprogrammer/owp">owp</a>
-      <span class="small">by <a href="http://github.com/sibprogrammer">sibprogrammer</a></span></h1>
-
-    <div class="description">
-      OpenVZ Web Panel
-    </div>
-
-    <p>OpenVZ Web Panel is a GUI web-based frontend for controlling of the hardware and virtual servers with the OpenVZ virtualization technology.</p><h2>Contact</h2>
-<p>Alexei Yuzhakov (sibprogrammer@gmail.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/sibprogrammer/owp/zipball/master">zip</a> or
-      <a href="http://github.com/sibprogrammer/owp/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/sibprogrammer/owp</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/sibprogrammer/owp">sibprogrammer/owp</a>
-    </div>
-
-  </div>
-
-  
-</body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/prettify.js"></script>
+    <script type="text/javascript">
+(function($) {
+  window.prettyPrint();
+})(jQuery);
+    </script>
+  </body>
 </html>
+
